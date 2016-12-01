@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "WifiIntensity.Server", "WifiIntensity.Server\WifiIntensity.Server.njsproj", "{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}"
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "WifiIntensity.App", "..\html5\WirelessMonitor\WifiIntensity.App.jsproj", "{0486BA99-5000-4112-A484-93EDAE488921}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Release|x64.ActiveCfg = Release|Any CPU
+		{CCBA3B38-B4AD-4F00-B52A-F5CFC7F093AB}.Release|x86.ActiveCfg = Release|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|ARM.Build.0 = Debug|ARM
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|ARM.Deploy.0 = Debug|ARM
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|x64.ActiveCfg = Debug|x64
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|x64.Build.0 = Debug|x64
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|x64.Deploy.0 = Debug|x64
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|x86.ActiveCfg = Debug|x86
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|x86.Build.0 = Debug|x86
+		{0486BA99-5000-4112-A484-93EDAE488921}.Debug|x86.Deploy.0 = Debug|x86
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|ARM.ActiveCfg = Release|ARM
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|ARM.Build.0 = Release|ARM
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|ARM.Deploy.0 = Release|ARM
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|x64.ActiveCfg = Release|x64
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|x64.Build.0 = Release|x64
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|x64.Deploy.0 = Release|x64
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|x86.ActiveCfg = Release|x86
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|x86.Build.0 = Release|x86
+		{0486BA99-5000-4112-A484-93EDAE488921}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

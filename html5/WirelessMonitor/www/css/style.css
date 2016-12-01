@@ -1,0 +1,46 @@
+/* Empty. Add your own CSS if you like */
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.colaborate {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+    .colaborate .map {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        top: 55px;
+        bottom: 90px;
+    }
+
+    .colaborate .text {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        height: 40px;
+    }
+
+    .colaborate .buttonParent {
+        position: absolute;
+        height: 50px;
+        bottom: 50px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+    }
+
+    .colaborate button {
+        display: inline;
+    }
+
+.scroll {
+    height: 100%;
+}

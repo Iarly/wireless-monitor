@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>0486ba99-5000-4112-a484-93edae488921</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>WifiIntensity.App_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
+    <Content Include="config.xml" />
+    <Content Include="gulpfile.js" />
+    <Content Include="hooks\after_prepare\010_add_platform_class.js" />
+    <Content Include="hooks\README.md" />
+    <Content Include="ionic.project" />
+    <Content Include="package.json" />
+    <Content Include="plugins\android.json" />
+    <Content Include="plugins\com.ionic.keyboard\.fetch.json" />
+    <Content Include="plugins\com.ionic.keyboard\LICENSE" />
+    <Content Include="plugins\com.ionic.keyboard\package.json" />
+    <Content Include="plugins\com.ionic.keyboard\plugin.xml" />
+    <Content Include="plugins\com.ionic.keyboard\README.md" />
+    <Content Include="plugins\com.ionic.keyboard\src\android\IonicKeyboard.java" />
+    <Content Include="plugins\com.ionic.keyboard\src\ios\IonicKeyboard.h" />
+    <Content Include="plugins\com.ionic.keyboard\src\ios\IonicKeyboard.m" />
+    <Content Include="plugins\com.ionic.keyboard\src\ios\UIWebViewExtension.h" />
+    <Content Include="plugins\com.ionic.keyboard\src\ios\UIWebViewExtension.m" />
+    <Content Include="plugins\com.ionic.keyboard\www\keyboard.js" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\.fetch.json" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\CONTRIBUTING.md" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\LICENSE" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\NOTICE" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\package.json" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\plugin.xml" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\README.md" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\RELEASENOTES.md" />
+    <Content Include="plugins\com.pmict.wirelessmonitor.proxy.wirelessmonitorproxy\src\android\WirelessMonitorProxy.java" />
+    <Content Include="plugins\org.apache.cordova.console\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.console\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.console\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.console\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.console\package.json" />
+    <Content Include="plugins\org.apache.cordova.console\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.console\README.md" />
+    <Content Include="plugins\org.apache.cordova.console\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.console\src\ios\CDVLogger.h" />
+    <Content Include="plugins\org.apache.cordova.console\src\ios\CDVLogger.m" />
+    <Content Include="plugins\org.apache.cordova.console\src\ubuntu\console.cpp" />
+    <Content Include="plugins\org.apache.cordova.console\src\ubuntu\console.h" />
+    <Content Include="plugins\org.apache.cordova.console\src\wp\DebugConsole.cs" />
+    <Content Include="plugins\org.apache.cordova.console\www\console-via-logger.js" />
+    <Content Include="plugins\org.apache.cordova.console\www\logger.js" />
+    <Content Include="plugins\org.apache.cordova.device\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.device\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.device\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.device\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.device\package.json" />
+    <Content Include="plugins\org.apache.cordova.device\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.device\README.md" />
+    <Content Include="plugins\org.apache.cordova.device\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.device\src\android\Device.java" />
+    <Content Include="plugins\org.apache.cordova.device\src\blackberry10\index.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\browser\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\firefoxos\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\ios\CDVDevice.h" />
+    <Content Include="plugins\org.apache.cordova.device\src\ios\CDVDevice.m" />
+    <Content Include="plugins\org.apache.cordova.device\src\tizen\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\ubuntu\device.cpp" />
+    <Content Include="plugins\org.apache.cordova.device\src\ubuntu\device.h" />
+    <Content Include="plugins\org.apache.cordova.device\src\ubuntu\device.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\windows8\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\windows\DeviceProxy.js" />
+    <Content Include="plugins\org.apache.cordova.device\src\wp\Device.cs" />
+    <Content Include="plugins\org.apache.cordova.device\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.device\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.device\www\device.js" />
+    <Content Include="README.md" />
+    <Content Include="scss\ionic.app.scss" />
+    <Content Include="www\css\style.css" />
+    <Content Include="www\img\ionic.png" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\app.js" />
+    <Content Include="www\js\controllers.js" />
+    <Content Include="www\js\services.js" />
+    <Content Include="www\lib\ionic\css\ionic.css" />
+    <Content Include="www\lib\ionic\css\ionic.min.css" />
+    <Content Include="www\lib\ionic\fonts\ionicons.eot" />
+    <Content Include="www\lib\ionic\fonts\ionicons.svg" />
+    <Content Include="www\lib\ionic\fonts\ionicons.ttf" />
+    <Content Include="www\lib\ionic\fonts\ionicons.woff" />
+    <Content Include="www\lib\ionic\js\angular-ui\angular-ui-router.js" />
+    <Content Include="www\lib\ionic\js\angular-ui\angular-ui-router.min.js" />
+    <Content Include="www\lib\ionic\js\angular\angular-animate.js" />
+    <Content Include="www\lib\ionic\js\angular\angular-animate.min.js" />
+    <Content Include="www\lib\ionic\js\angular\angular-resource.js" />
+    <Content Include="www\lib\ionic\js\angular\angular-resource.min.js" />
+    <Content Include="www\lib\ionic\js\angular\angular-sanitize.js" />
+    <Content Include="www\lib\ionic\js\angular\angular-sanitize.min.js" />
+    <Content Include="www\lib\ionic\js\angular\angular.js" />
+    <Content Include="www\lib\ionic\js\angular\angular.min.js" />
+    <Content Include="www\lib\ionic\js\ionic-angular.js" />
+    <Content Include="www\lib\ionic\js\ionic-angular.min.js" />
+    <Content Include="www\lib\ionic\js\ionic.bundle.js" />
+    <Content Include="www\lib\ionic\js\ionic.bundle.min.js" />
+    <Content Include="www\lib\ionic\js\ionic.js" />
+    <Content Include="www\lib\ionic\js\ionic.min.js" />
+    <Content Include="www\lib\ionic\scss\ionic.scss" />
+    <Content Include="www\lib\ionic\scss\ionicons\ionicons.scss" />
+    <Content Include="www\lib\ionic\scss\ionicons\_ionicons-animation.scss" />
+    <Content Include="www\lib\ionic\scss\ionicons\_ionicons-font.scss" />
+    <Content Include="www\lib\ionic\scss\ionicons\_ionicons-icons.scss" />
+    <Content Include="www\lib\ionic\scss\ionicons\_ionicons-variables.scss" />
+    <Content Include="www\lib\ionic\scss\_action-sheet.scss" />
+    <Content Include="www\lib\ionic\scss\_animations.scss" />
+    <Content Include="www\lib\ionic\scss\_backdrop.scss" />
+    <Content Include="www\lib\ionic\scss\_badge.scss" />
+    <Content Include="www\lib\ionic\scss\_bar.scss" />
+    <Content Include="www\lib\ionic\scss\_button-bar.scss" />
+    <Content Include="www\lib\ionic\scss\_button.scss" />
+    <Content Include="www\lib\ionic\scss\_checkbox.scss" />
+    <Content Include="www\lib\ionic\scss\_form.scss" />
+    <Content Include="www\lib\ionic\scss\_grid.scss" />
+    <Content Include="www\lib\ionic\scss\_items.scss" />
+    <Content Include="www\lib\ionic\scss\_list.scss" />
+    <Content Include="www\lib\ionic\scss\_loading.scss" />
+    <Content Include="www\lib\ionic\scss\_menu.scss" />
+    <Content Include="www\lib\ionic\scss\_mixins.scss" />
+    <Content Include="www\lib\ionic\scss\_modal.scss" />
+    <Content Include="www\lib\ionic\scss\_platform.scss" />
+    <Content Include="www\lib\ionic\scss\_popover.scss" />
+    <Content Include="www\lib\ionic\scss\_popup.scss" />
+    <Content Include="www\lib\ionic\scss\_progress.scss" />
+    <Content Include="www\lib\ionic\scss\_radio.scss" />
+    <Content Include="www\lib\ionic\scss\_range.scss" />
+    <Content Include="www\lib\ionic\scss\_reset.scss" />
+    <Content Include="www\lib\ionic\scss\_scaffolding.scss" />
+    <Content Include="www\lib\ionic\scss\_select.scss" />
+    <Content Include="www\lib\ionic\scss\_slide-box.scss" />
+    <Content Include="www\lib\ionic\scss\_tabs.scss" />
+    <Content Include="www\lib\ionic\scss\_toggle.scss" />
+    <Content Include="www\lib\ionic\scss\_type.scss" />
+    <Content Include="www\lib\ionic\scss\_util.scss" />
+    <Content Include="www\lib\ionic\scss\_variables.scss" />
+    <Content Include="www\lib\ionic\version.json" />
+    <Content Include="www\README.md" />
+    <Content Include="www\templates\tab-dash.html" />
+    <Content Include="www\templates\tab-colaborate.html" />
+    <Content Include="www\templates\tabs.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bld\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

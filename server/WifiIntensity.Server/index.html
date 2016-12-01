@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map_canvas {
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB6G22AZIpqP-E0PHjc2NOp1tavoHN-hGw&sensor=true">
+    </script>
+    <script type="text/javascript"
+        src="jquery-1.11.1.min.js">
+    </script>
+    <script type="text/javascript"
+        src="jaydata.min.js">
+    </script>
+    <script type="text/javascript"
+        src="q.min.js">
+    </script>
+    <script type="text/javascript"
+        src="jaydatamodules/qDeferred.min.js">
+    </script>
+    <script type="text/javascript"
+        src="jaydatamodules/datajs-1.1.2.min.js">
+    </script>
+    <script type="text/javascript">
+
+        function colorFromDecibeis(dBm) {
+            // dBm to Quality:
+            if (dBm <= -100)
+                return '#FF0000';
+            if (dBm >= -50)
+                return '#00FF00';
+            return '#7F7F00';
+            //quality = 2 * (dBm + 100);
+        };
+
+        function iconFromDecibeis(dBm) {
+            var path = "/images/";
+            if (dBm <= -100)
+                return path + "Red.png";
+            if (dBm >= -50)
+                return path + "Green.png";
+            return path + "Yellow.png";
+        };
+
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(-19.9377813, -43.981598),
+                zoom: 19,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                mapOptions);
+
+            $.get("http://localhost:8070/monitor/get/-19.9378313/-43.9816242/1", function (monitors) {
+                monitors.forEach(function (item) {
+                    var monitor = item.value;
+
+                    var cityCircle = new google.maps.Circle({
+                        strokeColor: colorFromDecibeis(monitor.Level),
+                        strokeOpacity: 0.5,
+                        strokeWeight: 2,
+                        fillColor: colorFromDecibeis(monitor.Level),
+                        fillOpacity: 0.1,
+                        map: map,
+                        title: monitor.SSID + " (" + monitor.Level + " dB)",
+                        center: new google.maps.LatLng(monitor.Latitude, monitor.Longitude),
+                        radius: monitor.Radius * 5,
+                        zIndex: 9999 + monitor.Level
+                    });
+
+                    var marker = new google.maps.Marker({
+                        anchorPoint: new google.maps.Point(7, 7),
+                        position: new google.maps.LatLng(monitor.Latitude, monitor.Longitude),
+                        map: map,
+                        icon: iconFromDecibeis(monitor.Level),
+                        title: monitor.SSID + " (" + monitor.Level + " dB)",
+                        zIndex: 9999 + monitor.Level
+                    });
+                });
+            });
+        }
+    </script>
+</head>
+<body onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%"></div>
+</body>
+</html>

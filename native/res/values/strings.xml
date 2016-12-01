@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wireless Monitor</string>
+    <string name="copyright">Iarly Lana Lins &#169; 2014</string>
+    
+    <string name="main_info">Posicione-se no mapa e reporte a qualidade das redes disponíveis</string>
+    <string name="action_settings">Settings</string>
+    <string name="send">Buscar redes e enviar</string>
+
+    <string name="action_monitor">Enviar redes</string>
+    
+    <string name="monitor_send_name">Enviar redes</string>
+    <string name="accuracy_info">Precisão: </string>
+
+</resources>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map_canvas {
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB6G22AZIpqP-E0PHjc2NOp1tavoHN-hGw&sensor=true">
+    </script>
+    <script type="text/javascript"
+        src="jaydata.min.js">
+    </script>
+    <script type="text/javascript"
+        src="q.min.js">
+    </script>
+    <script type="text/javascript"
+        src="jaydatamodules/qDeferred.min.js">
+    </script>
+    <script type="text/javascript"
+        src="jaydatamodules/datajs-1.1.2.min.js">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(-19.9377813, -43.981598),
+                zoom: 19,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                mapOptions);
+
+            $data.initService('http://localhost:52999/widb.svc').then(function (db) {
+                db.AccessPointMonitors
+                    .filter('it.Position.distance(p) < r', {
+                        p: { latitude: -19.9377813, longitude: -43.981598 },
+                        r: 15
+                    })
+                    .toArray().then(function (monitors) {
+                        monitors.forEach(function (monitor) {
+                            var marker = new google.maps.Marker({
+                                position: new google.maps.LatLng(monitor.Position.latitude, monitor.Position.longitude),
+                                map: map,
+                                title: monitor.SSID + " (" + monitor.Level + " dB"
+                            });
+                        });
+                    });
+            });
+        }
+    </script>
+</head>
+<body onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%"></div>
+</body>
+</html>

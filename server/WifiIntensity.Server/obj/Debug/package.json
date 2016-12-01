@@ -1,0 +1,10 @@
+{
+  "name": "WifiIntensity.Server",
+  "version": "0.0.0",
+  "description": "WifiIntensity.Server",
+  "main": "server.js",
+  "author": {
+    "name": "Iarly",
+    "email": ""
+  }
+}
